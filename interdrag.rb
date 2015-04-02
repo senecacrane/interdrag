@@ -90,18 +90,18 @@ puts '~ But as soon as you stop lulling him, he wakes up, damn..'
 end
 end
 # internal metods
-def affamato?
+def affamato? # need to eat
 @robainpancia<=2
 end
-def caccapupu?
+def caccapupu? # need to go to the bathroom
 @robaintestino>=4
 end
-def tempopassa
+def tempopassa # time go on
 if @robainpancia>0
 @robainpancia=@robainpancia-1   # move 'things' in the digestive system
 @robaintestino=@robaintestino+1 # won't tell more
 else
-if @addormentato
+if @addormentato # sleeping
 @addormentato=false
 end
 puts '> '+@nome+' sta morendo di fame, povero cucciolo! Oh miseria, è così disperato che mangia TE! AIUTO!'
@@ -124,7 +124,7 @@ end
 puts '> Lo stomaco di '+@nome+' brontola... Meglio dargli da mangiare!'
 puts '> '+@nome+' is hungry... Better give him something to eat...'
 end
-if caccapupu?
+if caccapupu? 
 if @addormentato
 @addormentato=false
 puts '> '+@nome+' si sveglia di colpo!'
