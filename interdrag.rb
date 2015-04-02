@@ -1,9 +1,9 @@
 #encoding: UTF-8
 class Dragon
 def initialize nome
-@addormentato=false # non dorme
-@robainpancia=5 # non deve magna
-@robaintestino=0 # non deve fare caccapupu
+@addormentato=false # he isn't sleeping
+@robainpancia=5 # he doesn't need to eat
+@robaintestino=0 # he doesn't need to go to the dragon's toilette
 puts '* Ciao! Benvenuto a Dragonlandia! Se vuoi iniziare e sapere come si chiama il tuo draghetto, digita \'Begin\':'
 puts '* Hi! Welcome to Dragonland! If you want to begin and want to know what is your dragon\'s name, type \'Begin\':'
 inizio=gets.chomp
@@ -89,7 +89,7 @@ puts '~ Ma appena smetti si risveglia, mannaggia al ca..'
 puts '~ But as soon as you stop lulling him, he wakes up, damn..'
 end
 end
-# i metodi interni, non visibili, che non devono interessarvi
+# internal metods
 def affamato?
 @robainpancia<=2
 end
@@ -98,8 +98,8 @@ def caccapupu?
 end
 def tempopassa
 if @robainpancia>0
-@robainpancia=@robainpancia-1   # sposta la 'roba' dalla pancia
-@robaintestino=@robaintestino+1 # all'intestino
+@robainpancia=@robainpancia-1   # move 'things' in the digestive system
+@robaintestino=@robaintestino+1 # won't tell more
 else
 if @addormentato
 @addormentato=false
@@ -108,7 +108,7 @@ puts '> '+@nome+' sta morendo di fame, povero cucciolo! Oh miseria, è così dis
 puts '> '+@nome+' is starving, he needs to eat something, or someone! Man, he is going to eat YOU! HELP!'
 puts '* Addio, riposa in pace.'
 puts '* Goodbye, rest in peace.'
-exit       # termina il programma
+exit       # exit the program
 end
 if @robaintestino>=5
 @robaintestino=0
