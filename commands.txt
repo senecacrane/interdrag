@@ -1,0 +1,23 @@
+#ITALIAN
+
+Lista comandi disponibili (non c'è differenza tra maiuscole e minuscole):
+Go to sleep               #Dormi
+Eat                       #Mangia
+Go for a walk             #Fai una passeggiata
+Play with me              #Gioca
+Lull                      #Culla
+Exit                      #esci
+Il gioco andrà avanti fino a quando la sua fame arriverà a 0, in quel momento morirai (metaforicamente), oppure fino a quando scriverai Exit
+
+
+
+#ENGLISH (I think, sorry for the homemade translation...)
+
+List of available commands (doesn't matter if you write DoRmI or DORMi or dormi)
+Go to sleep
+Eat
+Go for a walk
+Play with me
+Lull
+Exit
+The game will go on unless the dragon's hunger will reach 0 or unless you type Exit
